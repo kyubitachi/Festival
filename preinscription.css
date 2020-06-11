@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+
+html, body, div, span, h1, h2,
+h3, h4, h5, h6, p, 
+footer, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+
+	html {
+		box-sizing: border-box;
+	}
+
+	body {
+		background: #000000;
+	}
+
+	body, input, select, textarea {
+		font-family: "Open Sans", "Montserrat", "arial", sans-serif;
+		font-size: 15pt;
+		font-weight: 400;
+		letter-spacing: 0.075em;
+		line-height: 1.65em;
+	}
+
+		@media screen and (max-width: 1680px) {
+			body, input, select, textarea {
+				font-size: 13pt;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+			body, input, select, textarea {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+			body, input, select, textarea {
+				font-size: 11pt;
+				letter-spacing: 0.0375em;
+			}
+
+		}
+
+	p {
+		margin: 0 0 2em 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+		font-weight: 800;
+		letter-spacing: 0.225em;
+		line-height: 1em;
+		margin: 0 0 1em 0;
+		text-transform: uppercase;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+	h2 {
+		font-size: 1.35em;
+		line-height: 1.75em;
+	}
+
+		@media screen and (max-width: 736px) {
+			h2 {
+				font-size: 1.1em;
+				line-height: 1.65em;
+			}
+
+		}
+
+	h3 {
+		font-size: 1.15em;
+		line-height: 1.75em;
+	}
+
+		@media screen and (max-width: 736px) {
+			h3 {
+				font-size: 1em;
+				line-height: 1.65em;
+			}
+
+		}
+
+	h4 {
+		font-size: 1em;
+		line-height: 1.5em;
+	}
+
+	h5 {
+		font-size: 0.8em;
+		line-height: 1.5em;
+	}
+
+	h6 {
+		font-size: 0.7em;
+		line-height: 1.5em;
+	}	
+
+	hr {
+		border: 0;
+		border-bottom: solid 2px #fff;
+		margin: 3em 0;
+	}
+
+		hr.major {
+			margin: 4.5em 0;
+		}
+
+
+
+				
+
+	.wrapper {
+		padding: 6em 0 4em 0 ;
+	}
+
+		.wrapper > .mySection {
+			width: 60em;
+			margin: 0 auto;
+		}
+
+			@media screen and (max-width: 1280px) {
+				.wrapper > .mySection {
+					width: 90%;
+				}
+
+			}
+
+			@media screen and (max-width: 980px) {
+				.wrapper > .mySection {
+					width: 100%;
+				}
+
+			} 
+
+
+		.wrapper.one {
+			background-color: #ffffff;
+			color: #4E4852; 
+		}
+
+			.wrapper.one strong, .wrapper.one b {
+				color: #2E3842;
+			} 
+
+			.wrapper.one h2, .wrapper.one h3, .wrapper.one h4, .wrapper.one h5, .wrapper.one h6 {
+				color: #2E3842;
+			} 
+
+			.wrapper.one hr {
+				border-color: #dfdfdf; 
+			} 
+
+
+		@media screen and (max-width: 980px) {
+			.wrapper {
+				padding: 4em 3em 2em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+			.wrapper {
+				padding: 3em 2em 1em 2em ;
+			}
+
+		}
+
+/* Header */ 
+
+	#header {		
+		background: #c8a461;
+		height: 3em;
+		left: 0;
+		line-height: 3em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+	}
+
+		#header h1 {
+			height: inherit;
+			left: 4em;
+			line-height: inherit;
+			position: absolute;
+			top: 0;
+		}
+
+			@media screen and (max-width: 736px) {
+					#header h1 a {
+						font-size: 0.8em;
+					}
+			}	
+
+			[type="search"] {
+		   -webkit-appearance: textfield;
+		   -webkit-box-sizing: content-box;
+		   margin-left: 75%;
+		   border-radius: 10rem;
+			}
+
+			@media screen and (max-width: 980px) {
+				[type="search"] {	
+				display: none;
+			    }
+			}
+
+
+		@media screen and (max-width: 1480px) and (min-width: 980px) {
+			[type="search"] {	
+				position: absolute;	
+			    margin-top: 1%;
+			    margin-left:64%;
+			}
+		}
+
+		@media screen and (min-width: 1480px) {
+			[type="search"] {	
+				position: absolute;	
+			    margin-top: 0.7%;
+			    margin-left: 74%;
+			}
+		}
+
+				
+		#header nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+			#header nav > ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				white-space: nowrap;
+			}
+				
+					#header nav > ul > li > a {
+						border: 0;
+						color: #fff;
+						display: block;
+						font-size: 0.8em;
+						letter-spacing: 0.225em;
+						padding: 0 1.5em;
+						text-transform: uppercase;
+					}						
+
+							#header nav > ul > li > .myMenu:after {
+								background-image: url("images/bars.svg");
+								background-position: right center;
+								background-repeat: no-repeat;
+								content: '';
+								display: inline-block;
+								height: 3.75em;
+								vertical-align: top;
+								width: 2em;
+							}
+
+							@media screen and (max-width: 736px) {
+								#header nav > ul > li > .myMenu {
+									padding: 0 1.5em;
+								}
+
+
+							}
+
+						@media screen and (max-width: 736px) {
+							#header nav > ul > li > a {
+								padding: 0 0 0 1.5em;
+							}
+
+						}
+
+					#header nav > ul > li:first-child {
+						margin-left: 0;
+					} 
+
+		
+
+/* Main */
+
+		.bordure {
+		padding: 2%;
+		box-shadow: 0 1px 5px 0 rgba(84,84,84,0.2), 0 2px 2px 0 rgba(84,84,84,0.2), 0 3px 1px -2px rgba(84,84,84,0.2);
+		border-radius: 5px;
+		}
+
+		.supprimer {
+		position: absolute;
+		margin-left: 50%;
+		margin-top: -2%;
+		background: #6185c8;
+		color: #ffffff;
+		font-size: 1rem;
+		cursor: pointer;
+		padding: 1rem;
+		border-radius: 10rem;
+		transform: scale(1);
+		transition: transform 400ms; 
+		}
+		
+		.supprimer:hover {
+		transform: scale(1.15);
+		color: #ffffff; }
+
+
+		label {
+		font-size: 1rem;
+		padding-right: 10px;
+		}
+
+
+		select {
+		background: #6185c8;
+		color: #ffffff;
+		font-size: 1rem;
+		cursor: pointer;
+		padding: 1rem;
+		border-radius: 10rem;
+		transform: scale(1);
+		transition: transform 400ms; 
+		}
+
+		select:hover {
+		transform: scale(1.15);
+		color: #ffffff; }
+
+
+
+		span.titreFilm {
+		font-size: 1.1em;
+		}
+
+		span.infos {
+			font-size: 0.5em;
+			text-transform: uppercase;
+		}
+
+		span.nb {
+			font-size: 0.75em;
+		}
+
+		span.date {
+		font-size: 0.9em;
+		}
+
+		input[type="submit"]{
+		background: #6185c8;
+		color: #ffffff;
+		font-size: 1rem;
+		cursor: pointer;
+		padding: 1rem;
+		border-radius: 10rem;
+		transform: scale(1);
+		transition: transform 400ms
+		}
+
+		input[type="submit"]:hover {
+		transform: scale(1.15);
+		color: #ffffff; }
+
+
+		#main > header h2 {
+			font-size: 1.75em;
+			margin: 0 0 0.5em 0;
+		}
+
+		#main > header p {
+			color: inherit;
+			letter-spacing: 0.225em;
+			text-transform: uppercase;
+			top: 0;
+		}
+
+			#main > header p a {
+				color: inherit;
+			}
+
+
+		@media screen and (max-width: 580px) {
+			.supprimer {
+				margin-top: -8%;
+				margin-left: 60%;
+				padding: 0.6rem;;
+			}
+		}
+
+		@media screen and (max-width: 736px) and (min-width: 580px) {
+			.supprimer {
+				margin-top: -5%;
+				margin-left: 65%;
+				padding: 0.8rem;
+			}
+		}
+
+		@media screen and (max-width: 980px) and (min-width: 736px) {
+			.supprimer {				
+				margin-top: -4%;
+				margin-left: 70%;
+				padding: 0.8rem;
+			}
+		}
+
+		@media screen and (max-width: 1480px) and (min-width: 980px) {
+			.supprimer {				
+				margin-top: -3%;
+				margin-left: 62%;
+				padding: 0.8rem;
+			}
+		}
+
+		@media screen and (min-width: 1480px) {
+			.supprimer {				
+				margin-left: 50%;
+				margin-top: -2%;
+				padding: 0.8rem;
+			}
+		}
+
+		@media screen and (max-width: 580px) {
+			select {
+				margin-top: -15%;
+				margin-left: 30%;
+				padding: 0.3rem;
+			}
+		}
+
+		@media screen and (max-width: 580px) {
+			input[type="submit"] {
+				padding: 0.5rem;
+			}
+		}
+
+		
+
+
+		@media screen and (max-width: 1680px) {
+			#main > header {
+				padding: 10em 0 8em 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+			#main > header {
+				padding: 8em 3em 6em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+			#main > header {
+				padding: 10em 3em 8em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+			#main > header {
+				padding: 5em 3em 3em 3em ;
+			}
+
+				#main > header h2 {
+					font-size: 1.25em;
+					margin: 0 0 1em 0;
+				}
+
+		}
+
+	body.is-mobile #main > header {
+		background-attachment: scroll;
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 6em 0 4em 0 ;
+		background-color: #000000;
+		text-align: center;
+	}
+
+	#actus p{
+		height: 100px;
+		color: white;
+	}	
+	#actus p:hover {
+		height: 200px;
+	}
+
+	#contact {
+		color: white;
+	}
